@@ -1,0 +1,326 @@
+body {
+	margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #444; 
+}
+
+// Section Navbar
+.section-navbar{
+  color: #000;
+  opacity: 1;
+  font-family: 'Montserrat', sans-serif;
+  .navbar{
+    @media screen and (max-width: 991px) {
+      opacity: unset;
+      background-color: #686868!important;
+      box-shadow: 1px 1px 6px #383838;
+    }
+  }
+  .nav-active{
+    // padding-right: 20px;
+    a:after {
+      content: unset!important;
+    }
+    a{
+      color: #000;
+      font-weight: 700;
+      border-bottom: 3px solid #595757;
+      @media screen and (max-width: 991px) {
+        width: 12%;
+      }
+      @media screen and (max-width: 850px) {
+        width: 16%;
+      }
+      @media screen and (max-width: 650px) {
+        width: 20%;
+      }
+      @media screen and (max-width: 530px) {
+        width: 25%;
+      }
+      @media screen and (max-width: 434px) {
+        width: 30%;
+      }
+      &:hover{
+        color: #000!important;
+      }
+    }
+    .nav-link{
+      color: #000!important;
+    }
+  }
+  .nav-hover {
+		// padding-right: 20px;
+		a:after {
+			background: none repeat scroll 0 0 transparent;
+			bottom: 0;
+			content: "";
+			display: block;
+			height: 3px;
+			left: 50%;
+			margin-top: 8px;
+			color: #595757;
+			/* position: absolute; */
+			background: #595757;
+			transition: width 0.3s ease 0s, left 0.3s ease 0s;
+			width: 0;
+		}
+		a:hover:after{
+			width: 100%;
+			left: 0;
+		}
+		.nav-link{
+			color: #000!important;
+			&:hover{
+        cursor: pointer;
+				transition: 0.2s;
+				@media screen and (max-width: 991px) {
+					width: 12%;
+				}
+				@media screen and (max-width: 850px) {
+					width: 16%;
+				}
+				@media screen and (max-width: 650px) {
+					width: 20%;
+				}
+				@media screen and (max-width: 530px) {
+					width: 25%;
+				}
+				@media screen and (max-width: 434px) {
+					width: 30%;
+				}
+			}
+		}
+	}
+}
+
+// For Color Navbar When On Scroll
+.shrink {
+	transition: 0.1s;
+	box-shadow: 1px 1px 6px #383737;
+	background-color: #7C7C7C!important;
+	color: #000;
+}
+
+// Section Jumbotron
+.section-jumbotron{
+    font-family: 'Montserrat', sans-serif;
+    .jumbotron{
+        background: url('../img/jumbotron3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        background-position: center;
+        .display-4{
+            font-size: 70px;
+            font-weight: 700;
+            padding-top: 100px;
+        }
+        ul{
+            display: inline-flex;
+            li{
+                padding-right: 30px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+// Section Promo
+.section-promo{
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        text-align: center;
+    }
+    .card{
+        img{
+            background-size: cover;
+        }
+    }
+}
+
+// Section Parallax
+.section-parallax{
+    .parallax {
+        background-image: url("../img/parallax.jpg");
+        min-height: 300px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            color: #fff;
+        }
+    }
+}
+
+// Section Karir
+.section-karir{
+    h4{
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(112, 73, 73);
+        font-weight: 500;
+    }
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(58, 58, 58);
+        font-weight: 700;
+    }
+    p{
+        font-family: 'Montserrat', sans-serif;
+    }
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(58, 58, 58);
+        font-weight: 700;   
+    }
+    ul{
+        font-family: 'Montserrat', sans-serif;
+    }
+    .box-form{
+        box-shadow: 4px 6px 10px 0px rgb(0 0 0 / 33%);
+        padding: 30px 50px 10px;
+        background-color: #f2f6f9;
+        font-family: 'Montserrat', sans-serif;
+        h2,p{
+            text-align: center;
+        }
+    }
+}
+
+// Section Footer
+.section-footer{
+    footer {
+        background: #3f4346;
+        background: -webkit-linear-gradient(59deg, #a7a8a8, #282a2b);
+        background: linear-gradient(59deg, #b0b1b1, #222425);
+        color: white;
+        margin-top:100px;
+      }
+      
+      footer a {
+        color: #fff;
+        font-size: 14px;
+        transition-duration: 0.2s;
+      }
+      
+      footer a:hover {
+        color: #FA944B;
+        text-decoration: none;
+      }
+      
+      .copy {
+        font-size: 12px;
+        padding: 10px;
+        border-top: 1px solid #FFFFFF;
+      }
+      
+      .footer-middle {
+        padding-top: 2em;
+        color: white;
+      }
+      
+      
+      /*SOCİAL İCONS*/
+      
+      /* footer social icons */
+      
+      ul.social-network {
+        list-style: none;
+        display: inline;
+        margin-left: 0 !important;
+        padding: 0;
+      }
+      
+      ul.social-network li {
+        display: inline;
+        margin: 0 5px;
+      }
+      
+      
+      /* footer social icons */
+      
+      .social-network a.icoFacebook:hover {
+        background-color: #3B5998;
+      }
+      
+      .social-network a.icoLinkedin:hover {
+        background-color: #007bb7;
+      }
+      
+      .social-network a.icoFacebook:hover i,
+      .social-network a.icoLinkedin:hover i {
+        color: #fff;
+      }
+      
+      .social-network a.socialIcon:hover,
+      .socialHoverClass {
+        color: #44BCDD;
+      }
+      
+      .social-circle li a {
+        display: inline-block;
+        position: relative;
+        margin: 0 auto 0 auto;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+      }
+      
+      .social-circle li i {
+        margin: 0;
+        line-height: 30px;
+        text-align: center;
+      }
+      
+      .social-circle li a:hover i,
+      .triggeredHover {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms--transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        transition: all 0.2s;
+      }
+      
+      .social-circle i {
+        color: #595959;
+        -webkit-transition: all 0.8s;
+        -moz-transition: all 0.8s;
+        -o-transition: all 0.8s;
+        -ms-transition: all 0.8s;
+        transition: all 0.8s;
+      }
+      
+      .social-network a {
+        background-color: #F9F9F9;
+      }
+      
+}
